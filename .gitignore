@@ -1,0 +1,6 @@
+.idea/
+robo.cleaner/bin/
+robo.cleaner/obj/
+robo.cleaner.tests/bin/
+robo.cleaner.tests/obj
+
