@@ -1,0 +1,15 @@
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/bin/Debug/net6.0/robo.cleaner
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/bin/Debug/net6.0/robo.cleaner.deps.json
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/bin/Debug/net6.0/robo.cleaner.runtimeconfig.json
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/bin/Debug/net6.0/robo.cleaner.dll
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/bin/Debug/net6.0/robo.cleaner.pdb
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/obj/Debug/net6.0/robo.cleaner.csproj.AssemblyReference.cache
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/obj/Debug/net6.0/robo.cleaner.GeneratedMSBuildEditorConfig.editorconfig
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/obj/Debug/net6.0/robo.cleaner.AssemblyInfoInputs.cache
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/obj/Debug/net6.0/robo.cleaner.AssemblyInfo.cs
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/obj/Debug/net6.0/robo.cleaner.csproj.CoreCompileInputs.cache
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/obj/Debug/net6.0/robo.cleaner.dll
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/obj/Debug/net6.0/refint/robo.cleaner.dll
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/obj/Debug/net6.0/robo.cleaner.pdb
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/obj/Debug/net6.0/robo.cleaner.genruntimeconfig.cache
+/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner/obj/Debug/net6.0/ref/robo.cleaner.dll
