@@ -2,26 +2,28 @@ using System;
 using System.Diagnostics;
 using Moq;
 using NUnit.Framework;
+using robo.cleaner.Implementations;
 using robo.cleaner.Interfaces;
 
-namespace robo.cleaner.tests;
+namespace robo.cleaner.tests.UnitTests;
 
 public class InputReaderTests
 {
+#pragma warning disable CS8618
     private IInputReader _inputReader;
     private Mock<IConsoleWrapper> _consoleWrapperMock;
+#pragma warning restore CS8618
 
-    [SetUp]
-    public void Setup()
+    public InputReaderTests()
     {
         _consoleWrapperMock = new Mock<IConsoleWrapper>();
+        _inputReader = new InputReader(_consoleWrapperMock.Object);
     }
-    
+
     [Test]
     public void ShouldReturnTypeOfInteger_WhenNumberOfCommandsIsInteger()
     {
         //Arrange
-        _inputReader = new InputReader(_consoleWrapperMock.Object);
         _consoleWrapperMock.Setup(x => x.ReadLine()).Returns("1");
 
         // Act
@@ -36,7 +38,6 @@ public class InputReaderTests
     public void ShouldThrowException_WhenNumberOfCommandsIsString()
     {
         //Arrange
-        _inputReader = new InputReader(_consoleWrapperMock.Object);
         _consoleWrapperMock.Setup(x => x.ReadLine()).Returns("ABC");
 
         // Act
@@ -52,7 +53,6 @@ public class InputReaderTests
     public void ShouldReturnInitialCoordinates_WhenEnteredCorrectly()
     {
         //Arrange
-        _inputReader = new InputReader(_consoleWrapperMock.Object);
         _consoleWrapperMock.Setup(x => x.ReadLine()).Returns("10 22");
 
         // Act
@@ -67,7 +67,6 @@ public class InputReaderTests
     public void ShouldThrowException_WhenCoordinatesPairIsNotEnteredCorrectly()
     {
         //Arrange
-        _inputReader = new InputReader(_consoleWrapperMock.Object);
         _consoleWrapperMock.Setup(x => x.ReadLine()).Returns("10 AB");
 
         // Act
@@ -83,14 +82,13 @@ public class InputReaderTests
     public void ShouldReturnRobotsMovement_WhenEnteredCorrectly()
     {
         //Arrange
-        _inputReader = new InputReader(_consoleWrapperMock.Object);
         _consoleWrapperMock.Setup(x => x.ReadLine()).Returns("E 22");
 
         // Act
         var result =  _inputReader.GetRobotMovement();        
         
         // Assert
-        Assert.That(result.RoboDirection, Is.EqualTo('E'));
+        Assert.That(result.RobotDirection, Is.EqualTo('E'));
         Assert.That(result.DirectionSteps, Is.EqualTo(22));
     }
     
@@ -98,7 +96,6 @@ public class InputReaderTests
     public void ShouldThrowException_WhenRobotMovementIsNotEnteredCorrectly()
     {
         //Arrange
-        _inputReader = new InputReader(_consoleWrapperMock.Object);
         _consoleWrapperMock.Setup(x => x.ReadLine()).Returns("11 10");
 
         // Act
@@ -114,7 +111,6 @@ public class InputReaderTests
     public void ShouldReturnACleaningCycle_WhenEnteredCorrectly()
     {
         //Arrange
-        _inputReader = new InputReader(_consoleWrapperMock.Object);
         _consoleWrapperMock.SetupSequence(x => x.ReadLine())
             .Returns("2")
             .Returns("10 22")
@@ -128,9 +124,9 @@ public class InputReaderTests
         Assert.That(result.InitialPosition.X, Is.EqualTo(10));
         Assert.That(result.InitialPosition.Y, Is.EqualTo(22));
         Assert.That(result.RoboMovements.Count, Is.EqualTo(2));
-        Assert.That(result.RoboMovements[0].RoboDirection, Is.EqualTo('E'));
+        Assert.That(result.RoboMovements[0].RobotDirection, Is.EqualTo('E'));
         Assert.That(result.RoboMovements[0].DirectionSteps, Is.EqualTo(2));
-        Assert.That(result.RoboMovements[1].RoboDirection, Is.EqualTo('N'));
+        Assert.That(result.RoboMovements[1].RobotDirection, Is.EqualTo('N'));
         Assert.That(result.RoboMovements[1].DirectionSteps, Is.EqualTo(1));
     }
     

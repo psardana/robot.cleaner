@@ -1,6 +1,6 @@
 using robo.cleaner.Interfaces;
 
-namespace robo.cleaner;
+namespace robo.cleaner.Implementations;
 
 public class ConsoleWrapper : IConsoleWrapper
 {
@@ -19,6 +19,6 @@ public class ConsoleWrapper : IConsoleWrapper
     /// <returns></returns>
     public string ReadLine()
     {
-        return Console.ReadLine();
+        return Console.ReadLine()!;
     }
 }

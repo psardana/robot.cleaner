@@ -1,12 +1,4 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fba9737d_002D7db4_002D498c_002Da2ff_002D275d2cf504e2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldReturnTypeOfInteger_WhenNumberOfCommandsIsInteger" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::83E8E0A1-A98F-49C0-9746-6BBCD278C1F7::net6.0::robo.cleaner.tests.InputReaderTests.ShouldReturnTypeOfInteger_WhenNumberOfCommandsIsInteger&lt;/TestId&gt;
-    &lt;TestId&gt;NUnit3x::83E8E0A1-A98F-49C0-9746-6BBCD278C1F7::net6.0::robo.cleaner.tests.InputReaderTests.ShouldThrowException_WhenNumberOfCommandsIsString&lt;/TestId&gt;
-    &lt;TestId&gt;NUnit3x::83E8E0A1-A98F-49C0-9746-6BBCD278C1F7::net6.0::robo.cleaner.tests.InputReaderTests.ShouldReturnInitialCoordinates_WhenEnteredCorrectly&lt;/TestId&gt;
-    &lt;TestId&gt;NUnit3x::83E8E0A1-A98F-49C0-9746-6BBCD278C1F7::net6.0::robo.cleaner.tests.InputReaderTests.ShouldThrowException_WhenCoordinatesPairIsNotEnteredCorrectly&lt;/TestId&gt;
-    &lt;TestId&gt;NUnit3x::83E8E0A1-A98F-49C0-9746-6BBCD278C1F7::net6.0::robo.cleaner.tests.InputReaderTests.ShouldReturnRobotsMovement_WhenEnteredCorrectly&lt;/TestId&gt;
-    &lt;TestId&gt;NUnit3x::83E8E0A1-A98F-49C0-9746-6BBCD278C1F7::net6.0::robo.cleaner.tests.InputReaderTests.ShouldThrowException_WhenRobotMovementIsNotEnteredCorrectly&lt;/TestId&gt;
-    &lt;TestId&gt;NUnit3x::83E8E0A1-A98F-49C0-9746-6BBCD278C1F7::net6.0::robo.cleaner.tests.InputReaderTests.ShouldReturnACleaningCycle_WhenEnteredCorrectly&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+  &lt;Project Location="/Users/piyush.sardana/RiderProjects/robo.cleaner/robo.cleaner.tests" Presentation="&amp;lt;robo.cleaner.tests&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

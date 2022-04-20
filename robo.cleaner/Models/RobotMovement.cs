@@ -1,17 +1,17 @@
 namespace robo.cleaner.Models;
 
 /// <summary>
-/// this class represents robo's movement
+/// this class represents robots movement
 /// </summary>
 public class RobotMovement
 {
-    public char RoboDirection { get; }
+    public char RobotDirection { get;}
 
     public int DirectionSteps { get; }
     
-    public RobotMovement(char roboDirection, int directionSteps)
+    public RobotMovement(char robotDirection, int directionSteps)
     {
-        RoboDirection = roboDirection;
+        RobotDirection = robotDirection;
         DirectionSteps = directionSteps;
     }
 }
